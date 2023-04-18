@@ -1,50 +1,57 @@
 <html>
+    <head>
+    </head>
 
-<head>
-</head>
-
-<body>
+    <body>
     <?php
     //1
-    $baterai = 97;
-    if ($baterai == 100) {
-        echo "Baterai Anda Penuh<br>";
-    } else {
-        echo "Baterai Anda Tidak Penuh<br>";
+    $volume=97;
+    if($volume>=80){
+        echo"Volume Besar<br>";
+    }
+    else{
+        echo"Volume Kecil<br>";
     }
 
     //2
-    $tinggi = 180;
-    if ($tinggi > 175) {
-        echo "Kamu Tinggi<br>";
-    } else {
-        echo "Kamu Pendek<br>";
+    $beli=10;//Pcs
+    if($beli>=10){
+        echo"Diskon 20%<br>";
+    }
+    else{
+        echo"Tidak Dapat Diskon<br>";
     }
 
     //3
-    $berat = 80;
-    if ($berat > 80) {
-        echo "Kamu Berat<br>";
-    } else {
-        echo "Kamu Ringan<br>";
+    $berat=70;//Kg
+    if($berat>=70){
+        echo"Baju Kamu XL<br>";
+    }
+    else{
+        echo"Baju Kamu S<br>";
     }
 
     //4
-    $gaji = 50000000;
-    if ($gaji > 10000000) {
-        echo "Gaji Kamu Besar<br>";
-    } else {
-        echo "Gaji Kamu Lumayan<br>";
+    $lama_tidur=7;//jam
+    if($lama_tidur>=8){
+        echo"Kamu Tukang Tidur<br>";
+    }
+    else{
+        echo"Kamu Kurang Tidur<br>";
     }
 
-    //5
-    $jarak = 200; //meter
-    if ($jarak > 10000) {
-        echo "Rumah Kamu Jauh Dari Kampus<br>";
-    } else{
-        echo "Rumah Kamu Lumayan Dekat Dari Kampus<br>";
-    }
-    ?>
-</body>
+     //5
+     $nilai=60;
+     if($nilai>=75){
+         echo"Kamu Lulus<br>";
+     }
+     else{
+        echo"Kamu Remedial<br>";
+     }
+    ?> 
+
+    
+    </body>
 
 </html>
+
