@@ -1,44 +1,42 @@
 <html>
     <head>
     </head>
+
     <body>
     <?php
     //1
-    $baterai=97;
-    if($baterai=100){
-        echo"Baterai Anda Penuh<br>";
+    $volume=97;
+    if($volume>=80){
+        echo"Volume Besar<br>";
     }
 
     //2
-    $tinggi=180;
-    if($tinggi>175){
-        echo"Kamu Tinggi<br>";
+    $beli=10;//Pcs
+    if($beli>=10){
+        echo"Diskon 20%<br>";
     }
 
     //3
-    $berat = 80;
-    if ($berat > 80) {
-        echo "Kamu Berat<br>";
-    }
-    
-    //3
-    $hari="Minggu";
-    if($hari="Minggu"){
-        echo"Sekolah Libur";
+    $berat=70;//Kg
+    if($berat>=70){
+        echo"Baju Kamu XL<br>";
     }
 
-     //4
-     $gaji=50000000;
-     if($gaji>10000000){
-         echo"Gaji Kamu Besar<br>";
+    //4
+    $lama_tidur=7;//jam
+    if($lama_tidur>=8){
+        echo"Kamu Tukang Tidur<br>";
+    }
+
+     //5
+     $nilai=60;
+     if($nilai>=75){
+         echo"Kamu Lulus<br>";
      }
-
-    //5
-    $jarak = 200; //meter
-    if ($jarak > 10000) {
-        echo "Rumah Kamu Jauh Dari Kampus<br>";
-    }
     ?> 
+
+    
     </body>
+
 </html>
 
