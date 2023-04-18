@@ -5,63 +5,66 @@
     <body>
     <?php
     //1
-    $baterai=97;
-    if($baterai==100){
-        echo"Baterai Anda Penuh<br>";
+    $volume=97;
+    if($volume>=80){
+        echo"Volume Besar<br>";
     }
-    else if($baterai>=1 and $baterai<=99){
-        echo"Baterai Anda Tidak Penuh<br>";
+    else if($volume>=40){
+        echo"Volume Normal<br>";
     }
     else{
-        echo"Baterai Anda Habis<br>";
+        echo"Volume Kecil<br>";
     }
 
     //2
-    $tinggi=180;
-    if($tinggi>175){
-        echo"Kamu Tinggi<br>";
+    $beli=10;//Pcs
+    if($beli>=10){
+        echo"Diskon 20%<br>";
     }
-    else if($tinggi>160 and $tinggi<175){
-        echo"Tinggi Badan Kamu Normal<br>";
+    else if($beli>=5){
+        echo"Diskon 10%<br>";
     }
     else{
-        echo"Kamu Pendek<br>";
+        echo"Tidak Dapat Diskon<br>";
     }
 
     //3
-    $berat=80;
-    if($berat>80){
-        echo"Kamu Berat<br>";
+    $berat=70;//Kg
+    if($berat>=70){
+        echo"Baju Kamu XL<br>";
     }
-    else if($berat>50 and $berat<80){
-        echo"Berat Badan Kamu Normal<br>";
+    else if($berat>=60){
+        echo"Baju Kamu L<br>";
+    }
+    else if($berat>=50){
+        echo"Baju Kamu M,<br>";
     }
     else{
-        echo"Kamu Ringan<br>";
+        echo"Baju Kamu S<br>";
     }
 
     //4
-    $gaji=50000000;
-    if($gaji>10000000){
-        echo"Gaji Kamu Besar<br>";
+    $lama_tidur=7;//jam
+    if($lama_tidur>8){
+        echo"Kamu Tukang Tidur<br>";
     }
-    else if($gaji>3000000 and $gaji<10000000){
-        echo"Gaji Kamu Lumayan<br>";
+    else if($lama_tidur>=6 and $lama_tidur <=8){
+        echo"Kamu Cukup Tidur<br>";
     }
     else{
-        echo"Gaji Kamu Kecil<br>";
+        echo"Kamu Kurang Tidur<br>";
     }
 
      //5
-     $jarak=200;//meter
-     if($jarak>10000){
-         echo"Rumah Kamu Jauh Dari Kampus<br>";
+     $nilai=60;
+     if($nilai>=75){
+         echo"Kamu Lulus<br>";
      }
-     else if($jarak>1000 and $jarak<10000){
-         echo"Rumah Kamu Lumayan Dekat Dari Kampus<br>";
+     else if($nilai>=1){
+         echo"Kamu Remedial<br>";
      }
      else{
-         echo"Rumah Kamu Dekat Dari Kampus<br>";
+         echo"Kamu Mengulang<br>";
      }
     ?> 
 
